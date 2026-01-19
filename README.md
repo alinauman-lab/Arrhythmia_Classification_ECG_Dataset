@@ -24,7 +24,7 @@ The workflow consists of three main stages: Preprocessing (De-noising), Feature 
 ## 📊 Arrhythmia Types Detected
 The model classifies the following 6 rhythms:
 
-![ECG Signal Comparison](images/ecg_signals.png)
+![ECG Signal Comparison](images/Comparison.png)
 *Fig 2. Comparison of ECG Lead II for different arrhythmias.*
 
 * **Normal Sinus Rhythm (SR):** Normal beat (60-100 bpm).
@@ -45,6 +45,9 @@ The model was evaluated on 11,381 patients using the Chapman University ECG data
 | **Single-Lead (Lead II)** | **97.6%** | **0.97** | **0.96** | **97.0** |
 
 *Table 1. Performance comparison showing Single-Lead accuracy is comparable to 12-Lead setups.*
+
+![ECG Signal Comparison](images/Confusion_matrix.png)
+Fig 3. Comparison of the ECG Lead II-trained confusion matrix with the 12-Lead ECG Confusion Matrix.
 
 ---
 
