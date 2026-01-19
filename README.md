@@ -19,13 +19,16 @@ The workflow consists of three main stages: Preprocessing (De-noising), Feature 
 2.  **Feature Extraction:** Extracted 1526 features (temporal, spectral, nonlinear, entropy) and reduced them to **35 key features** using Permutation Feature Importance.
 3.  **Classification:** Trained a Histogram Gradient Boosting Classifier (HGBC), which is optimized for memory efficiency (~350MB) and speed.
 
+<p align="center">
+  <img src="images/training_features.png" width="80%" alt="Training on Extracted Features">
+  <br>
+  <em>Fig 2. Training on Extracted Features.</em>
+</p>
+
 ---
 
 ## 📊 Arrhythmia Types Detected
 The model classifies the following 6 rhythms:
-
-![ECG Signal Comparison](images/Comparison.png)
-*Fig 2. Comparison of ECG Lead II for different arrhythmias.*
 
 * **Normal Sinus Rhythm (SR):** Normal beat (60-100 bpm).
 * **Sinus Bradycardia (SB):** Slow heart rate (<60 bpm).
@@ -33,6 +36,9 @@ The model classifies the following 6 rhythms:
 * **Sinus Irregularity (SI):** Irregular rhythm, common in young people.
 * **Supraventricular Tachycardia (SVT):** Rapid rhythm originating above ventricles.
 * **Atrial Fibrillation (AFIB):** Irregular atrial beating, includes Atrial Flutter.
+
+![ECG Signal Comparison](images/Comparison.png)
+*Fig 3. Comparison of ECG Lead II for different arrhythmias.*
 
 ---
 
@@ -46,7 +52,7 @@ The model was evaluated on 11,381 patients using the Chapman University ECG data
 
 *Table 1. Performance comparison showing Single-Lead accuracy is comparable to 12-Lead setups.*
 
-![ECG Signal Comparison](images/Confusion_matrix.png)
+![Confusion_matrix](images/Confusion_matrix.png)
 Fig 3. Comparison of the ECG Lead II-trained confusion matrix with the 12-Lead ECG Confusion Matrix.
 
 ---
