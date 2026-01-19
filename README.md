@@ -11,7 +11,7 @@ The model achieves **97.6% accuracy** using only Lead II data, demonstrating tha
 ## 📸 Methodology
 The workflow consists of three main stages: Preprocessing (De-noising), Feature Extraction/Selection, and Classification using Histogram Gradient Boosting (HGBC).
 
-![Proposed Workflow Diagram](images/workflow_diagram.png)
+![Proposed Workflow Diagram](images/workflow.png)
 *Fig 1. Proposed workflow: ECG data is de-noised, features are extracted/selected, and used to train the HGBC model.*
 
 ### Pipeline Steps:
